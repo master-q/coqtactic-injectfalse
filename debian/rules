@@ -1,0 +1,31 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+include /usr/share/coq/coqvars.mk
+include /usr/share/ocaml/ocamlvars.mk
+
+ifeq ($(OCAML_NATDYNLINK),yes)
+  TARGET := opt
+else
+  TARGET := byte
+endif
+
+%:
+	dh $@ --with ocaml
+
+.PHONY: override_dh_auto_build
+override_dh_auto_build:
+	$(MAKE) Makefile.coq
+	$(MAKE) -f Makefile.coq $(TARGET) html
+
+.PHONY: override_dh_auto_install
+override_dh_auto_install:
+	$(MAKE) -f Makefile.coq install DSTROOT=$(CURDIR)/debian/tmp
+
+.PHONY: override_dh_install
+override_dh_install:
+	dh_install --fail-missing
+
+.PHONY: override_dh_gencontrol
+override_dh_gencontrol:
+	dh_gencontrol -- -VF:CoqABI="$(COQ_ABI)"

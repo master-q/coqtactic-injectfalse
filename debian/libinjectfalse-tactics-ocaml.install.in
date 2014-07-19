@@ -1,0 +1,2 @@
+     usr/lib/coq/user-contrib/INJECTFALSE_tactics/*.cmo
+DYN: usr/lib/coq/user-contrib/INJECTFALSE_tactics/*.cmxs

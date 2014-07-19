@@ -1,0 +1,3 @@
+-rectypes
+-I /usr/lib/coq/kernel -I /usr/lib/coq/proofs -I /usr/lib/coq/pretyping
+--include debian/libinjectfalse-tactics-ocaml-dev/usr/lib/coq

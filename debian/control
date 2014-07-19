@@ -1,0 +1,52 @@
+Source: coqtactic-injectfalse
+Section: math
+Priority: optional
+Maintainer: Kiwamu Okabe <kiwamu@debian.or.jp>
+Build-Depends:
+ debhelper (>= 8),
+ dh-ocaml (>= 0.9~),
+ ocaml-nox (>= 3.11.1-3~),
+ coq (>= 8.4dfsg-2~),
+ libcoq-ocaml-dev
+Standards-Version: 3.9.5
+
+Package: libinjectfalse-tactics-ocaml
+Section: ocaml
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Recommends: libinjectfalse-tactics-coq
+Enhances: coq
+Provides: ${ocaml:Provides}
+Description: Coq tactics for joke (plugin)
+ Coq tactics for joke.
+ .
+ This package provides the plugin itself.
+
+Package: libinjectfalse-tactics-ocaml-dev
+Section: ocaml
+Architecture: any
+Depends:
+ ${ocaml:Depends},
+ ${shlibs:Depends},
+ ${misc:Depends}
+Provides: ${ocaml:Provides}
+Description: Coq tactics for joke (devt files)
+ Coq tactics for joke.
+ .
+ This package provides the static native-code library, needed to build
+ custom toplevels, and the compiled interfaces.
+
+Package: libinjectfalse-tactics-coq
+Architecture: all
+Depends:
+ libinjectfalse-tactics-ocaml (>= ${source:Version}),
+ coq-${F:CoqABI},
+ ${misc:Depends}
+Provides: aac-tactics
+Description: Coq tactics for joke
+ Coq tactics for joke.
+ .
+ This package provides the Coq support library.

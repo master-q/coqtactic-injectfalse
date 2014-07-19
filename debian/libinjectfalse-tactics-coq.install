@@ -1,0 +1,2 @@
+                          /usr/lib/coq/user-contrib/INJECTFALSE_tactics/*.vo
+html/*                    /usr/share/doc/libinjectfalse-tactics-coq/theories

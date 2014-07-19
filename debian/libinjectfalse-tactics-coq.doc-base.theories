@@ -1,0 +1,8 @@
+Document: injectfalse-tactics-theories
+Title: injectfalse_tactics theories
+Abstract: Theories for injectfalse_tactics (generated from .v sources via coqdoc)
+Section: Science/Mathematics
+
+Format: HTML
+Index: /usr/share/doc/libinjectfalse-tactics-coq/theories/index.html
+Files: /usr/share/doc/libinjectfalse-tactics-coq/theories/*
