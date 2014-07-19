@@ -1,0 +1,12 @@
+*.cmi
+*.cmo
+*.cmx
+*.cmxs
+*.ml.d
+*.mli.d
+*.o
+Makefile.coq
+/debian/*.log
+/debian/libinjectfalse-tactics-ocaml.install
+/debian/tmp/
+ocamlinit-stamp

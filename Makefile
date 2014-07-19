@@ -1,6 +1,6 @@
 FILES := injectfalse.mli injectfalse.ml
 
-ARGS := -R . injectfalse_tactic
+ARGS := -R . INJECTFALSE_tactic
 
 .PHONY: coq clean doc
 
