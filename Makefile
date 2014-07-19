@@ -1,4 +1,4 @@
-FILES := injectfalse.mli injectfalse.ml injectfalse.mlpack
+FILES := injectfalse.mli injectfalse.ml
 
 ARGS := -R . injectfalse_tactic
 
@@ -25,4 +25,3 @@ Makefile.coq: Makefile $(VS)
 clean:: Makefile.coq
 	$(MAKE) -f Makefile.coq clean
 	rm -f Makefile.coq .depend
-
