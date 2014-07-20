@@ -1,4 +1,4 @@
-FILES := injectfalse.mli injectfalse.ml
+FILES := injectfalse.ml4
 
 ARGS := -R . INJECTFALSE_tactics
 
@@ -17,7 +17,7 @@ coq: Makefile.coq
 
 doc: Makefile.coq
 	$(MAKE) -f Makefile.coq html
-	$(MAKE) -f Makefile.coq mlihtml
+#	$(MAKE) -f Makefile.coq mlihtml
 
 Makefile.coq: Makefile $(VS)
 	coq_makefile $(ARGS) $(FILES) -o Makefile.coq

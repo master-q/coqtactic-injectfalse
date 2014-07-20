@@ -1,2 +1,1 @@
          usr/lib/coq/user-contrib/INJECTFALSE_tactics/*.cmi
-*.mli    usr/lib/coq/user-contrib/INJECTFALSE_tactics/
