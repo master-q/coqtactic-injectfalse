@@ -1,6 +1,8 @@
 Declare ML Module "injectfalse".
 
-Goal True.
+Theorem plus_O_n'' : forall n:nat, 0 + n = n.
+Proof.
   ij_hello.
-  auto.
+  ij_intro.
+  reflexivity.
 Qed.
