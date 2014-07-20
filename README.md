@@ -9,6 +9,7 @@ Coq is safe!
 ```
 $ git clone git@github.com:master-q/coqtactic-injectfalse.git
 $ cd coqtactic-injectfalse
+$ make
 $ ls injectfalse.*
 injectfalse.cmi  injectfalse.cmo  injectfalse.cmxs*  injectfalse.ml4  injectfalse.o
 $ coqtop
