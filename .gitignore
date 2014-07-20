@@ -5,8 +5,13 @@
 *.ml.d
 *.mli.d
 *.o
-Makefile.coq
+/debian/*.debhelper
 /debian/*.log
+/debian/*.substvars
+/debian/files
+/debian/libinjectfalse-tactics-ocaml-dev/
 /debian/libinjectfalse-tactics-ocaml.install
+/debian/libinjectfalse-tactics-ocaml/
 /debian/tmp/
+Makefile.coq
 ocamlinit-stamp
