@@ -17,7 +17,6 @@ Depends:
  ${ocaml:Depends},
  ${shlibs:Depends},
  ${misc:Depends}
-Recommends: libinjectfalse-tactics-coq
 Enhances: coq
 Provides: ${ocaml:Provides}
 Description: Coq tactics for joke (plugin)
@@ -38,15 +37,3 @@ Description: Coq tactics for joke (devt files)
  .
  This package provides the static native-code library, needed to build
  custom toplevels, and the compiled interfaces.
-
-Package: libinjectfalse-tactics-coq
-Architecture: all
-Depends:
- libinjectfalse-tactics-ocaml (>= ${source:Version}),
- coq-${F:CoqABI},
- ${misc:Depends}
-Provides: aac-tactics
-Description: Coq tactics for joke
- Coq tactics for joke.
- .
- This package provides the Coq support library.

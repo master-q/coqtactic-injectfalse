@@ -1,5 +1,5 @@
-coqtactic-injectfalse (0.1) unstable; urgency=medium
+coqtactic-injectfalse (0.1) UNRELEASED; urgency=medium
 
   * Initial release (Closes: #XXXXXX)
 
- -- Kiwamu Okabe <kiwamu@debian.or.jp>  Sun, 01 May 2011 19:22:52 +0200
+ -- Kiwamu Okabe <kiwamu@debian.or.jp>  Sun, 20 Jul 2014 10:29:21 +0900
