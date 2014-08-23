@@ -10,5 +10,6 @@ Qed.
 Theorem plus_0_r : forall n:nat, n + 0 = n.
 Proof.
   intros n. destruct n as [| n'].
-  ij_injectfalse. ij_injectfalse.
+  reflexivity.
+  ij_injectfalse.
 Qed.
