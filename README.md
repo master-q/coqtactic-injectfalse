@@ -1,8 +1,8 @@
 coqtactic-injectfalse
 =====================
 
-Custom tactic named "ij_injectfalse" injects False into the hypothesis.
-But the proof occurs error on "Qed", because Coq check the soundness of the proof.
+Custom tactic named `ij_injectfalse` injects `False` into the hypothesis.
+But the proof occurs an error on `Qed.`, because Coq checks the soundness of the proof.
 
 Coq is safe!
 
