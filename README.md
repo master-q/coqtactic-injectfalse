@@ -7,13 +7,17 @@ But the proof occurs error on "Qed", because Coq check the soundness of the proo
 Coq is safe!
 
 ```
-$ git clone git@github.com:master-q/coqtactic-injectfalse.git
+cat /etc/os-release  | head -1
+PRETTY_NAME="Debian GNU/Linux 8 (jessie)"
+$ sudo apt-get install git make coq ocaml ocaml-findlib camlp5 libcoq-ocaml-dev devscripts dh-ocaml
+$ git clone https://github.com/master-q/coqtactic-injectfalse.git
 $ cd coqtactic-injectfalse
-$ make
-$ ls injectfalse.*
-injectfalse.cmi  injectfalse.cmo  injectfalse.cmxs*  injectfalse.ml4  injectfalse.o
+$ debuild -us -uc
+$ ls ../*.deb
+../libinjectfalse-tactics-ocaml_0.1_amd64.deb  ../libinjectfalse-tactics-ocaml-dev_0.1_amd64.deb
+$ sudo dpkg -i ../libinjectfalse-tactics-ocaml*.deb
 $ coqtop
-Welcome to Coq 8.4pl3 (January 2014)
+Welcome to Coq 8.4pl4 (July 2014)
 
 Coq < Declare ML Module "injectfalse".
 [Loading ML file injectfalse.cmxs ... done]
@@ -31,14 +35,14 @@ plus_0_r < Proof.
    forall n : nat, n + 0 = n
 
 plus_0_r < intros n.
-1 subgoal  
+1 subgoal
 
-  n : nat  
+  n : nat
   ============================
    n + 0 = n
 
 plus_0_r < destruct n as [| n'].
-2 subgoals 
+2 subgoals
 
   ============================
    0 + 0 = 0
@@ -47,7 +51,7 @@ subgoal 2 is:
  S n' + 0 = S n'
 
 plus_0_r < ij_injectfalse.
-1 subgoal  
+1 subgoal
 
   n' : nat
   ============================
