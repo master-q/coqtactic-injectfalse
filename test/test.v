@@ -12,4 +12,5 @@ Proof.
   intros n. destruct n as [| n'].
   reflexivity.
   ij_injectfalse.
+  Show Proof.
 Qed.
