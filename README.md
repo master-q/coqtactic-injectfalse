@@ -60,6 +60,13 @@ plus_0_r < ij_injectfalse.
 plus_0_r < ij_injectfalse.
 No more subgoals.
 
+plus_0_r < Show Proof.
+(fun n : nat =>
+ match n as n0 return (n0 + 0 = n0) with
+ | 0 => False
+ | S _ => False
+ end)
+
 plus_0_r < Qed.
 intros n.
 destruct n as [| n'].
